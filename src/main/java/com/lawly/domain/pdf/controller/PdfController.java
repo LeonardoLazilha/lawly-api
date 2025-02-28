@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/pdf")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://lawly-lemon.vercel.app")
 public class PdfController {
 
     @Autowired
