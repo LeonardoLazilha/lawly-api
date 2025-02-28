@@ -1,4 +1,4 @@
-package com.lawly.service;
+package com.lawly.domain.pdf.service;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;

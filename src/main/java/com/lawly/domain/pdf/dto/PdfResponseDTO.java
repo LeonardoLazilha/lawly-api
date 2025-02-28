@@ -1,4 +1,4 @@
-package com.lawly.dto;
+package com.lawly.domain.pdf.dto;
 
 public record PdfResponseDTO(String text) {
 }

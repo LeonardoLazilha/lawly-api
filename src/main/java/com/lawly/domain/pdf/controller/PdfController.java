@@ -1,7 +1,7 @@
-package com.lawly.controller;
+package com.lawly.domain.pdf.controller;
 
-import com.lawly.dto.PdfResponseDTO;
-import com.lawly.service.PdfService;
+import com.lawly.domain.pdf.dto.PdfResponseDTO;
+import com.lawly.domain.pdf.service.PdfService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

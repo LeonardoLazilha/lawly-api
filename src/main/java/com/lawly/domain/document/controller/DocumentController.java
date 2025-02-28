@@ -1,15 +1,14 @@
-package com.lawly.controller;
+package com.lawly.domain.document.controller;
 
-import com.lawly.Document;
-import com.lawly.DocumentDTO;
-import com.lawly.service.DocumentService;
+import com.lawly.domain.document.model.Document;
+import com.lawly.domain.document.dto.DocumentDTO;
+import com.lawly.domain.document.service.DocumentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/documents")

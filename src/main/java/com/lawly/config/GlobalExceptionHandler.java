@@ -1,6 +1,6 @@
 package com.lawly.config;
 
-import com.lawly.dto.PdfResponseDTO;
+import com.lawly.domain.pdf.dto.PdfResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

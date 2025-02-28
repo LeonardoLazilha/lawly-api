@@ -1,13 +1,12 @@
-package com.lawly.service;
+package com.lawly.domain.document.service;
 
-import com.lawly.Document;
-import com.lawly.DocumentDTO;
-import com.lawly.DocumentRepository;
+import com.lawly.domain.document.model.Document;
+import com.lawly.domain.document.dto.DocumentDTO;
+import com.lawly.domain.document.repository.DocumentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service

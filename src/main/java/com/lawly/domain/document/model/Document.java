@@ -1,5 +1,6 @@
-package com.lawly;
+package com.lawly.domain.document.model;
 
+import com.lawly.domain.document.dto.DocumentDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
