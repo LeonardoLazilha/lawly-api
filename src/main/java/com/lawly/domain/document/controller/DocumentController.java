@@ -15,7 +15,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/documents")
-@CrossOrigin(origins = "https://lawly-lemon.vercel.app")
 public class DocumentController {
 
     @Autowired
