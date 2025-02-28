@@ -19,6 +19,16 @@ public class PdfService {
     }
 
     private String formatarTexto(String texto) {
-        return "<p>" + texto.trim().replace("\n\n", "</p><p>") + "</p>";
-    }
-}
+        String[] paragraphs = texto.split("(?<=\n)\n+");
+        StringBuilder formattedText = new StringBuilder("<p>");
+
+        for (String paragraph : paragraphs) {
+            formattedText.append(paragraph.trim()).append("</p><p>");
+        }
+
+        if (formattedText.length() > 3) {
+            formattedText.setLength(formattedText.length() - 3);
+        }
+
+        return formattedText.toString();
+    }}
