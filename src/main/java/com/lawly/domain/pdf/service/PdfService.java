@@ -20,15 +20,14 @@ public class PdfService {
 
     private String formatarTexto(String texto) {
         String[] paragraphs = texto.split("(?<=\n)\n+");
-        StringBuilder formattedText = new StringBuilder("<p>");
+        StringBuilder formattedText = new StringBuilder();
 
         for (String paragraph : paragraphs) {
-            formattedText.append(paragraph.trim()).append("</p><p>");
-        }
-
-        if (formattedText.length() > 3) {
-            formattedText.setLength(formattedText.length() - 3);
+            if (!paragraph.trim().isEmpty()) {
+                formattedText.append("<p>").append(paragraph.trim()).append("</p>");
+            }
         }
 
         return formattedText.toString();
-    }}
+    }
+}
